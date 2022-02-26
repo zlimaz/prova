@@ -1,0 +1,1 @@
+{"zeros": {"while": 1, "str": 1}, "fib": {"for": 1, "if": 1, "var": 1}, "exemplo": {"if": 0}, "maior": {"for": 1, "if": 1}, "primos": {"for": 2}, "maior_digito": {"while": 1, "int": 1}, "mais_frequente": {"list": 1, "def": 1}, "fizzbuzz": {"for": 1, "if": 1}, "fatorial": {"for": 1}, "pares": {"while": 1, "lst": 1}, "tamanho": {"int": 1}}
