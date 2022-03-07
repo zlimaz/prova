@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que mostre uma lista com todos os primos de 1 até n, onde
 n é um valor fornecido pelo usuário.

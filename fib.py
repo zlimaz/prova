@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que lê um número n e mostra a sequência de Fibonacci até seu n-ésimo termo.
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys
 from pathlib import Path
 from subprocess import STDOUT, PIPE
@@ -26,7 +28,7 @@ def error(inpt, out, expect, empty="*none*"):
 
 def check(script: str, inputs: str, expect) -> str:
     try:
-        compile(open(script).read(), script, "exec")
+        compile(open(script, encoding="utf-8").read(), script, "exec")
     except SyntaxError:
         return "Compilation error: not valid Python code!"
 
@@ -65,11 +67,11 @@ def main():
         elif filter_paths:
             valid_paths.remove(name)
 
-        with open(path) as fd:
+        with open(path, encoding="utf-8") as fd:
             examples = fd.read().split("---\n")
 
         out_path = path.parent / (name + ".output")
-        with open(out_path) as fd:
+        with open(out_path, encoding="utf-8") as fd:
             results = fd.read().split("\n---")
         script = path.parent.parent / (name + ".py")
 
@@ -94,7 +96,7 @@ def main():
     elif not has_errors:
         print("SUCESSO: Correção concluída sem encontrar erros")
 
-    g_path.write_text(json.dumps(grades))
+    g_path.write_text(json.dumps(grades), encoding="utf-8")
 
 
 if __name__ == "__main__":

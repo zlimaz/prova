@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Pergunte uma frase para o usuário e mostre todas as letras,
 da mais frequente para a menos frequente, mostrando o número

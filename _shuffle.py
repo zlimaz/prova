@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from pathlib import Path
 import os
 import random
@@ -34,9 +36,10 @@ def main():
         if src.name.endswith(".py"):
             dest = src.parent.parent / src.name
             print(f"{dest.name=}")
-            with open(src) as fd:
+            with open(src, encoding="utf-8") as fd:
                 data = transform(fd.read())
-            with open(dest, "w") as fd:
+            with open(dest, "w", encoding="utf-8") as fd:
+                fd.write("# -*- coding: utf-8 -*-\n")
                 fd.write(data)
 
 

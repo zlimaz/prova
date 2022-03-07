@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que leia um número n e retorne a sequência de Fizz-Buzz até este número.
 
@@ -18,7 +19,7 @@ elif i % 15 == 0:
                         for i in range(n):
                             if n <= 0:
                                 n = int(input(("n: ")))
-                                print("fizz")
+                                print("buzz")
                                 print("fizz")
                                 print("fizzbuzz")
                                 print("número inválido")

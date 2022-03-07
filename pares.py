@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que leia uma lista de strings separadas por vírgulas e
 mostre uma lista de pares. Caso a lista possua um número ímpar de 

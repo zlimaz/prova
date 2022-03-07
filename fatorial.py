@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que peça um número e calcule o seu fatorial
 

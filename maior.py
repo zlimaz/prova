@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que leia uma lista de números inteiros e forneça o valor e posição do maior
 elemento.

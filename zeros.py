@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Crie um programa que peça um número no terminal e conte a quantidade de 
 zeros à esquerda do mesmo.

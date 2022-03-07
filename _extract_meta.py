@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from pathlib import Path
 import os
 import random
@@ -26,12 +28,12 @@ def main():
 
     for src in (folder / "answer").iterdir():
         if src.name.endswith(".py"):
-            with open(src) as fd:
+            with open(src, encoding="utf-8") as fd:
                 data = extract_meta(fd.read())
                 key = src.name.removesuffix(".py")
                 meta[key] = data
 
-    with open(folder / "meta.json", "w") as fd:
+    with open(folder / "meta.json", "w", encoding="utf-8") as fd:
         json.dump(meta, fd)
 
 
