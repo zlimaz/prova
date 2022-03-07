@@ -1,7 +1,4 @@
-====================
-Prova de programação
-====================
-
+# Prova de programação
 
 Os exercícios desta atividade possuem um formato comum baseado na criação de códigos pela permutação de linhas. O exemplo abaixo ilustra o funcionamento da atividade:
 
@@ -54,8 +51,7 @@ Observe que foi necessário comentar as linhas `if b > a` e `elif a > b`. Poder�
 A regra importante é que você não pode modificar o **conteúdo** de nenhuma linha, nem criar linhas novas ou duplicar alguma linha existente no código inicial. As únicas operações permitidas são modifiocar a **ordem** das linhas e o **nível de indentação**. 
 
 
-Correção automática
-===================
+## Correção automática
 
 A atividade vem com um script responsável por realizar a correção automática de cada exercício. A correção é realizada pelo script "_corrigir.py" (note o underscore no início do nome). Podemos executá-lo como 
 
@@ -74,14 +70,12 @@ $ python _corrigir.py pares zeros
 Isso limita a correção a somente estes dois exercícios e facilita a leitura das mensagens de erro.
 
 
-Avaliação/notas
-===============
+## Avaliação/notas
 
 Cada exercício resolvido corretamente confere 1 ou mais pontos nas competências listadas logo abaixo do enunciado. No código de exemplo acima, teríamos somente um ponto conferido para a competência `if`. Vale lembrar que é necessário realizar 10 pontos por competência para demonstrar proficiência.
 
 
-Organização dos arquivos
-========================
+## Organização dos arquivos
 
 O repositório consiste neste README, alguns arquivos.py correspondentes aos exercícios e alguns scripts de correção ou outras atividades auxiliares. Todos os scripts de uso interno, inclusive o de correção, são marcados com um "_" no início do nome. Os outros arquivos.py correspondem aos exercícios da prova.
 
