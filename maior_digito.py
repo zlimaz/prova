@@ -13,5 +13,5 @@ m = max(unidade, m)
 while n > 0:
     n = int(input("n: "))
     n = n // 10
-    print(f"maior dígito = {m}")
+    print(f"maior digito = {m}")
     unidade = n % 10

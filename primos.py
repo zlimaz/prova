@@ -8,13 +8,15 @@ O exercício possui algumas dicas de implementação na forma de comentários.
 * for: 2
 """
 
-# Acrescentamos os novos primos à lista de primos.
-# Assumimos que o número é primo e tentamos encontrar o divisor.
-# Um número não pode ser primo se for divisível por outro primo.
+# Acrescentamos os novos primos a lista de primos.
+# Assumimos que o numero e primo e tentamos encontrar o divisor.
+# Um numero nao pode ser primo se for divisivel por outro primo.
+e_primo = False
+e_primo = True
 for p in primos:
     for x in nums:
-        if x % p == 0:
-            if é_primo:
+        if e_primo:
+            if x % p == 0:
                 n = int(input("n: "))
                 nums = range(2, n + 1)
                 nums = range(2, n)
@@ -22,5 +24,3 @@ for p in primos:
                 primos = [2, 3]
                 primos.append(x)
                 print(primos)
-                é_primo = False
-                é_primo = True

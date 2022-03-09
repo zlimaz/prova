@@ -3,6 +3,7 @@
 from pathlib import Path
 import os
 import random
+import unidecode
 
 random.seed(0)
 
@@ -11,6 +12,7 @@ def transform_line(st: str):
     st = st.strip()
     if st.startswith("#") and not st.endswith("."):
         st = st.strip(" #")
+    st = unidecode.unidecode(st)
     return st
 
 

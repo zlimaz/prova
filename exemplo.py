@@ -12,6 +12,6 @@ elif a > b:
         else:
             if a > b:
                 if b > a:
-                    print(f"o maior número é o a = {a}")
-                    print(f"o maior número é o b = {b}")
-                    print(f"os números são iguais")
+                    print(f"o maior numero e o a = {a}")
+                    print(f"o maior numero e o b = {b}")
+                    print(f"os numeros sao iguais")

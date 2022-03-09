@@ -5,19 +5,20 @@ import sys
 from pathlib import Path
 from subprocess import run, STDOUT, PIPE
 import subprocess
+from unidecode import unidecode
 
 
 def execute(script: str, inputs: str) -> str:
     subprocess
     cmd = [sys.executable, script]
-    stdin = inputs.encode("utf8") + b"\n"
-    res = subprocess.run(cmd, input=stdin, stdout=PIPE, stderr=PIPE)
+    inputs = unidecode(inputs) + "\n"
+    res = subprocess.run(cmd, input=inputs, stdout=PIPE, stderr=PIPE, text=True)
     if res.stderr:
-        print(inputs)
+        print(inputs.strip())
         print("---")
-        print(res.stderr.decode("utf8"))
+        print(res.stderr)
         raise RuntimeError
-    out = res.stdout.decode("utf8")
+    out = unidecode(res.stdout)
     print(inputs.strip())
     print(out.strip())
     print("---")

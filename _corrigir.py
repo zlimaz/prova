@@ -7,6 +7,7 @@ import subprocess
 import json
 import os
 import sys
+from unidecode import unidecode
 
 
 def indent(st):
@@ -33,14 +34,14 @@ def check(script: str, inputs: str, expect) -> str:
         return "Compilation error: not valid Python code!"
 
     cmd = [sys.executable, script]
-    res = subprocess.run(cmd, input=inputs.encode("utf8"), stdout=PIPE, stderr=PIPE)
+    res = subprocess.run(cmd, input=inputs, stdout=PIPE, stderr=PIPE, text=True)
     if res.stderr:
-        return error(inputs, res.stderr.decode("utf8"), expect)
+        return error(inputs, res.stderr, expect)
     elif not res.stdout and not expect.strip():
         return None
     elif not res.stdout:
         return error(inputs, "", expect)
-    elif (out := res.stdout.decode("utf8")).strip() == expect.strip():
+    elif (out := res.stdout).strip() == expect.strip():
         return None
     else:
         return error(inputs, out, expect)

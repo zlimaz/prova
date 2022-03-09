@@ -15,4 +15,4 @@ while number == "0":
         number = int(number)
         number = number[1:]
         while number.startswith("0"):
-            print(f"número de zeros = {n}")
+            print(f"numero de zeros = {n}")

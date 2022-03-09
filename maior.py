@@ -17,6 +17,6 @@ def maxarg(lst):
                 max_value = x
                 ns = [int(x) for x in input("ns: ").split(",")]
                 pos, valor = maxarg(ns)
-                print(f"maior valor = {valor}, posição = {pos + 1}o")
+                print(f"maior valor = {valor}, posicao = {pos + 1}o")
                 return (max_pos, max_value)
                 return None

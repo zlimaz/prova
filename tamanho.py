@@ -19,6 +19,6 @@ n += 1
 n += div
 n = 0
 print(c)
-print(f"número de dígitos = {n}")
+print(f"numero de digitos = {n}")
 while c:
     print(f"soma = {c}")

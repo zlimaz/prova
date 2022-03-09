@@ -22,5 +22,5 @@ elif i % 15 == 0:
                                 print("buzz")
                                 print("fizz")
                                 print("fizzbuzz")
-                                print("número inválido")
+                                print("numero invalido")
                                 print(i)
