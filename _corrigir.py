@@ -7,7 +7,6 @@ import subprocess
 import json
 import os
 import sys
-from unidecode import unidecode
 
 
 def indent(st):
