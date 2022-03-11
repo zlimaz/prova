@@ -9,16 +9,10 @@ inteiros possui
 a = int(input("a: "))
 b = int(input("b: "))
 c = a + b
-c = a + b
-c = abs(c)
-c = c % div
-c = c // div
-div = 10
-div = 2
-n += 1
-n += div
 n = 0
-print(c)
-print(f"numero de digitos = {n}")
+div = 10
+
 while c:
-    print(f"soma = {c}")
+    c = c // div
+    n += 1
+print(f"numero de digitos = {n}")
