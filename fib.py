@@ -7,14 +7,16 @@ Crie um programa que lê um número n e mostra a sequência de Fibonacci até se
 * var: 1
 """
 
-aux = x
-aux = y
+n = int(input("n: "))
+x = 1
+y = 1
+
 for _ in range(n):
-    n = int(input("n: "))
     print(x)
-    x = 1
+    aux = x
     x = y
-    y = 1
-    y = aux + y
     y = x + aux
-    y = x + y
+
+#aux = y
+#y = aux + y
+#y = x + y
