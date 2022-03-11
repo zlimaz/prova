@@ -9,18 +9,21 @@ de 3 por "fizz", os múltiplos de 5 por "buzz" e os múltiplos de ambos por "fiz
 * if: 1
 """
 
-break
-elif i % 15 == 0:
+n = int(input(("n: ")))
+
+for i in range(1, n + 1):
+    if n <= 0:
+        print("número inválido")
+    elif i % 15 == 0:
+        print("fizzbuzz")
     elif i % 3 == 0:
-        elif i % 5 == 0:
-            else:
-                for i in range(1, n + 1):
-                    for i in range(n + 1):
-                        for i in range(n):
-                            if n <= 0:
-                                n = int(input(("n: ")))
-                                print("buzz")
-                                print("fizz")
-                                print("fizzbuzz")
-                                print("numero invalido")
-                                print(i)
+        print("fizz")
+    elif i % 5 == 0:
+        print("buzz")
+    else:
+        print(i)
+
+
+#break
+#for i in range(n + 1):
+#for i in range(n):
